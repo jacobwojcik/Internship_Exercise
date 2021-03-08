@@ -1,0 +1,62 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.outer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    position: relative;
+    font-size: 30px;
+    
+}
+
+.input-div{
+    padding: 1em 0;
+    text-align: left;
+    width: 100%;
+}
+
+input{
+    padding: .5em 3em;
+    font-size: 30px;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+
+img{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 7px;
+    width: 60px;
+}
+
+.code{
+    position: absolute;
+    margin-top: 4%;
+    right:2%;
+    font-size: 20px;
+}
