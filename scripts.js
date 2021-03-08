@@ -32,7 +32,7 @@ const set_event_listeners = (gbp_rate) =>{
             alert.innerHTML = "";
             input[1].value = (input[0].value * gbp_rate).toFixed(2); // rounding to 2 decimal places
         });
-        
+
     input[1].addEventListener("keyup", () => {
 
         //handling invalid input
@@ -55,3 +55,7 @@ get_exchange_rate().then(gbp_rate => {
     set_event_listeners(gbp_rate);
     }
 });
+
+//exporting function for testing, only if node.js is running code
+if (typeof module !== 'undefined' && module.exports)
+    module.exports = get_exchange_rate
